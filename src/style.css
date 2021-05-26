@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -7,13 +6,26 @@
 :root {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    --color-copy: #333;
     --color-primary: #FFC500;
     --default-padding: 1rem;
+    color: var(--color-copy);
 }
 
 body {
     margin: 0;
     padding-top: 7.75rem;
+}
+
+header,
+main,
+footer {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 ul {
@@ -25,16 +37,21 @@ ul {
 .navbar {
     position: fixed;
     z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #FFF;
+}
+
+.navbar__container {
     display: grid;
     grid-template-columns: 1fr 9fr;
     align-items: center;
-    top: 0;
-    left: 0;
     width: 100vw;
     height: 7.75rem;
     padding: 0 1rem;
-    background-color: #000;
-    color: #FFF;
+
 }
 
 .navbar__links {
@@ -108,10 +125,12 @@ ul {
     font-size: 6.25rem; 
     line-height: 6.25rem;
     text-transform: uppercase;
+    margin: 1rem 0;
 }
 
 .slide__copy h2 span {
     display: block; 
+
 }
 
 .btn {
@@ -129,8 +148,73 @@ ul {
 
 .btn:hover, 
 .btn:active, 
-.btn:focus {
+.btn:focus,
+.btn--institutional {
     border-color: var(--color-primary);
     background-color: var(--color-primary);
     color: #FFF;
+}
+
+#counter {
+    background-color: var(--color-primary);
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.counter__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    place-items: center;
+    padding: 4.375rem 1rem;
+}
+
+.counter__container h3 {
+    font-size: 2.1875rem;
+}
+
+.counter__container h3 small {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.institutional {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3.125rem;
+    align-items: center;
+    padding: 4.375rem;
+}
+
+.institutional__image {
+    max-width: 550px;
+}
+
+.institutional__copy {
+    padding: 0 1.875rem;
+}
+
+.institutional__copy h6 {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.institutional__copy h4 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.institutional__copy p {
+    font-size: 1.0625rem;
+    line-height: 1.6875rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+    margin-bottom: 2.5rem;
+}
+
+.btn--institutional:hover {
+    color: var(--color-copy);
+    background: unset;
 }
