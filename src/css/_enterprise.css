@@ -1,0 +1,17 @@
+.enterprise {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.enterprise__info,
+.enterprise__man {
+    width: 550px;
+}
+
+.enterprise__info {
+    padding: 7.5rem 3rem 11.25rem 5rem;
+}
+
+.enterprise__man {
+    padding-top: 3rem;
+}

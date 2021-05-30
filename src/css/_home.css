@@ -1,6 +1,32 @@
-#slider {
+.slider {
   background-color: #000;
   color: #fff;
+}
+
+.slick-prev,
+.slick-next {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 5px solid #fff;
+  border-right: unset;
+  border-bottom: unset;
+  opacity: 0.7;
+}
+
+.slick-prev {
+  z-index: 1;
+  left: 1rem;
+  transform: rotate(-45deg);
+}
+
+.slick-next {
+  right: 1rem;
+  transform: rotate(135deg);
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: '';
 }
 
 .slide {
