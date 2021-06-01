@@ -6,14 +6,29 @@
 
 .footer__container {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: unset;
+  grid-template-rows: auto;
+  gap: 3rem;
   align-items: center;
-  padding: 5.25rem 0 3.75rem 0;
+  padding: 3rem 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__container {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: unset;
+  }
 }
 
 .footer .logo-studion {
-  justify-self: start;
+  justify-self: center;
   margin: 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer .logo-studion {
+    justify-self: start;
+  }
 }
 
 .logo-studion__subtitle {
@@ -22,15 +37,31 @@
 
 .footer__form {
   display: grid;
+  grid-template-columns: unset;
   gap: 1.25rem;
   place-items: center;
-  grid-template-columns: 5.625rem auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__form {
+    display: grid;
+    grid-template-columns: 9ch auto;
+    gap: 1.25rem;
+    place-items: center;
+  }
 }
 
 .footer__email {
   display: grid;
   grid-template-columns: auto 3.375rem;
   width: 100%;
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__email {
+    padding: 0;
+  }
 }
 
 .footer__form input {
@@ -73,7 +104,16 @@
 }
 
 .footer__social {
-  justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0.5rem;
+  justify-self: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__social {
+    justify-self: end;
+  }
 }
 
 .footer__social a,

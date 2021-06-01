@@ -1,7 +1,6 @@
 .hero {
   position: relative;
   height: 34rem;
-  overflow: hidden;
 }
 
 .hero__background {
@@ -34,7 +33,7 @@
 }
 
 .hero__copy p {
-    margin: 0;
+  margin: 0;
   color: var(--color-copy--alt);
   font-size: 0.9375rem;
   line-height: 1.875rem;
