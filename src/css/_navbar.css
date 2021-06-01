@@ -19,7 +19,7 @@
 
 @media screen and (min-width: 720px) {
   .navbar__container {
-    padding-top: 1rem;
+    padding-top: 0;
   }
 }
 

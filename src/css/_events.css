@@ -1,0 +1,9 @@
+.events {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.events__post {
+    display: grid;
+    grid-template-columns: minmax(150px, 300px) 1fr;
+}
