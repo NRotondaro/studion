@@ -1,0 +1,27 @@
+.gallery {
+    background-color: #000;
+}
+
+.hero__copy span {
+    text-transform: uppercase;
+    font-size: .9375rem;
+    letter-spacing: .1875rem;
+    line-height: 1.125rem;
+}
+
+.gallery_container {
+    padding-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10rem 0;
+}
+
+.colum {
+    flex: 25%;
+    max-width: 25%;
+}
+
+.colum img {
+    padding: 1rem;
+    width: 100%;
+}
