@@ -29,7 +29,7 @@
   padding: 2rem;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 1280px) {
   .hero__copy {
     width: 50%;
     padding: 7rem 0;

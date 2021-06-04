@@ -10,18 +10,32 @@
 }
 
 .gallery_container {
-    padding-top: 10rem;
     display: flex;
     flex-wrap: wrap;
-    padding: 10rem 0;
+    padding: 5rem 0;
 }
 
 .colum {
-    flex: 25%;
-    max-width: 25%;
+    flex: 100%;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 720px) {
+    .colum {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .colum {
+        flex: 25%;
+        max-width: 25%;
+    }
 }
 
 .colum img {
+    vertical-align: middle;
     padding: 1rem;
     width: 100%;
 }
