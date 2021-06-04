@@ -47,17 +47,18 @@
     font-size: 1.5rem;
 }
 
-.brands__container-image {
+.brands__container-image,
+.brands__container-image:focus {
     background-image: url("../images/enterprise-logos-mobile.png");
     width: 345px;
     height: 985px;
 }
 
 @media screen and (min-width: 720px) {
-    .brands__container-image {
-        background-image: url("../images/enterprise-logos.svg");
-        display: block;
-        height: auto;
+    .brands__container-image { 
+        background-image: url("../images/enterprise-logos.png");
+        width: 1100px;
+        height: 336px;
         margin-top: 4rem;
         margin-bottom: 2rem;
     }

@@ -4,15 +4,28 @@
 }
 
 .events__post {
-    display: grid;
-    grid-template-columns: minmax(150px, 300px) 1fr auto;
-    grid-template-rows: 1fr auto auto;
-    grid-template-areas: 
-        "events events events"
-        "row1    row2   row2"
-        "row1    row3   btn";
+    /* display: block;
+    margin: auto; 
+    width: 85%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     place-items: center;
     border-bottom: 1px solid #ccc;
+    padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 720px) {
+    .events__post {
+        display: grid;
+        grid-template-columns: minmax(150px, 300px) 1fr auto;
+        grid-template-areas: 
+            "events events events"
+            "row1    row2   row2"
+            "row1    row3   btn";
+        place-items: center;
+        padding-bottom: 0;
+    }
 }
 
 .events__post:hover {
@@ -28,11 +41,29 @@
 }
 
 .events__post-image {
-    padding: 2.3rem 3.5rem 3.1rem 2.8rem;
+    padding: 0;
+    margin-top: 2rem;
 }
 
+@media screen and (min-width: 720px) {
+    .events__post-image {
+        padding: 2.3rem 3.5rem 3.1rem 2.8rem;
+    }
+}
+
+
 .events__post-copy {
-    place-self: center stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 720px) {
+    .events__post-copy {
+        display: block;
+        place-self: center stretch;
+    }
 }
 
 .events__post-copy h2 {
@@ -41,7 +72,7 @@
     letter-spacing: .25rem;
     line-height: 1.125rem;
     font-weight: 700;
-    margin: 1.5rem auto;
+    margin: 1rem auto;
 }
 
 .events__post-copy i {
@@ -65,26 +96,49 @@
 .events__post-copy p {
     font-family: "Roboto", sans-serif;
     max-width: 54ch;
+    text-align: center;
+    margin: 1rem;
+}
+
+@media screen and (min-width: 720px)  {
+    .events__post-copy p {
+        margin: 1rem 0;
+        text-align: start;
+    }
 }
 
 .events__post-detail {
     grid-area: row2;
-}
-
-.events__post-detail {
     font-family: "Roboto", sans-serif;
     line-height: 1.7rem;
     color: var(--color-copy);
     max-width: 100ch;
-    padding-right: 2.5rem;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 720px) {
+    .events__post-detail {
+        padding: 0;
+        padding-right: 2.5rem;
+    }
 }
 
 .events__post-local {
-    grid-area: row3;
-    justify-self: start;
     display: grid;
-    grid-template-columns: minmax(1rem, 3rem) auto;
-    margin: 2.5rem 0 3.5rem 0;
+    grid-template-rows: auto;
+    place-items: center;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 720px) {
+    .events__post-local {
+        display: grid;
+        grid-template-columns: minmax(1rem, 3rem) auto;
+        grid-template-rows: unset;
+        grid-area: row3;
+        justify-self: start;
+        margin: 2.5rem 0 3.5rem 0;
+    } 
 }
 
 .events__post-local i {
