@@ -52,9 +52,9 @@ yarn test
 👤 **Nikson Rotondaro**
 
 - Website: https://github.com/NRotondaro
-- Twitter: [https:\/\/twitter.com\/NoskinR](https://twitter.com/https://twitter.com/NoskinR)
+- Twitter: (https://twitter.com/https://twitter.com/NoskinR)
 - Github: [@NRotondaro](https://github.com/NRotondaro)
-- LinkedIn: [https:\/\/www.linkedin.com\/in\/nikson-rotondaro\/](https://linkedin.com/in/https://www.linkedin.com/in/nikson-rotondaro/)
+- LinkedIn: (https://linkedin.com/in/https://www.linkedin.com/in/nikson-rotondaro/)
 
 ## Show your support
 
