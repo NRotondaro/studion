@@ -1,51 +1,39 @@
-<h1 align="center">Welcome to Studio 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+<h1 align="center">
+  <img alt="logo-studion" title="Studion" src="./_design/logo.png" />
+</h1>
+
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-> Event Studio fake fully responsive mobile first
+<br>
 
-### 🏠 [Homepage](http://studiorotondaro.surge.sh//)
+<p align="center">
+  <img alt="banner-studion" src="./_design/banner.png" width="100%">
+</p>
 
-### ✨ [Demo](http://studiorotondaro.surge.sh//)
+## ✨ Techs
 
-## Install
+This project is made using:
 
-Packages with
+- [React](https://reactjs.org)
+- [HTML]
+- [CSS]
 
-```sh
-npm install
-```
+## 💻 About
 
-or
+Studion is a fake website for events
 
-```sh
-yarn
-```
+## 🚀 How to
 
-## Usage
+- Clone the repository
+- Install packages with `yarn` or `npm install`
+- Run `yarn start` or `npm run start`
 
-```sh
-npm run start
-```
-
-or
-
-```sh
-yarn start
-```
-
-## Run tests
-
-```sh
-npm run test
-```
-
-or
-
-```sh
-yarn test
-```
+Now you can access [`localhost:3000`](http://localhost:3000)
 
 ## Author
 
