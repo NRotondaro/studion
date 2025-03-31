@@ -38,8 +38,7 @@ Now you can access [`localhost:3000`](http://localhost:3000)
 
 👤 **Nikson Rotondaro**
 
-- Website: https://github.com/NRotondaro
-- Twitter: [https:\/\/twitter.com\/NoskinR](https://twitter.com/NoskinR)
+- Website: http://studiorotondaro.surge.sh/
 - Github: [@NRotondaro](https://github.com/NRotondaro)
 - LinkedIn: [https:\/\/www.linkedin.com\/in\/nikson-rotondaro\/](https://www.linkedin.com/in/nikson-rotondaro/)
 
