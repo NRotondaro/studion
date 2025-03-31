@@ -52,15 +52,14 @@
   background: unset;
 }
 
-
 .btn--events {
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
-  font-size: .9375rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9375rem;
   font-weight: 700;
   line-height: 1.5rem;
   text-transform: uppercase;
-  
+
   align-self: end;
   border: unset;
   border-radius: 3rem;
