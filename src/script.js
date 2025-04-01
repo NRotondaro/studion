@@ -17,19 +17,28 @@ $(document).ready(() => {
   $('.slider').slick(slickOptions);
   $('.testimonials__slider').slick(slickOptions);
 
-  $('.footer__form-button').on('click', () => {
+  // Just for leraning porpuse this is not working due to limitations
+  $('.footer__form-button').on('click', (e) => {
     const email = $('#email').val();
+
+    // SMTP.js imported in index.html
+    // eslint-disable-next-line no-undef
     Email.send({
-      Host: 'smtp.elasticemail.com',
+      Host: 'smtp.elasticemail.com', // No domain available to use
       Username: 'niksonrotondaro1@gmail.com',
       Password: 'DC4049BF23107FAEC385E815EB67D69D3E74',
-      To: 'nikson_rotondaro@hotmail.com',
+      To: 'niksonrotondaro1@hotmail.com',
       From: email,
-      Subject: 'Please add me to the newsletter',
+      Subject: 'Por favor me adicione a newsletter',
       Body: `Olá. 
             Eu gostaria de ser adicionado na newsletter do site. 
             Meu email é ${email}. 
             Obrigado!`,
-    }).then((message) => alert(message));
+    })
+      .then((message) => alert(message))
+      .catch((error) => {
+        alert('Ocorreu um erro ao enviar o email, tente novamente mais tarde');
+        console.warn('Erro no envio do email:', error);
+      });
   });
 });
