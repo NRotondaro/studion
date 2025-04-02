@@ -1,0 +1,141 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: unset;
+  grid-template-rows: auto;
+  gap: 3rem;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__container {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: unset;
+  }
+}
+
+.footer .logo-studion {
+  justify-self: center;
+  margin: 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer .logo-studion {
+    justify-self: start;
+  }
+}
+
+.logo-studion__subtitle {
+  display: block;
+}
+
+.footer__form {
+  display: grid;
+  grid-template-columns: unset;
+  gap: 1.25rem;
+  place-items: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__form {
+    display: grid;
+    grid-template-columns: 9ch auto;
+    gap: 1.25rem;
+    place-items: center;
+  }
+}
+
+.footer__email {
+  display: grid;
+  grid-template-columns: auto 3.375rem;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__email {
+    padding: 0;
+  }
+}
+
+.footer__form input {
+  background-color: var(--color-primary);
+  border: unset;
+  height: 2.875rem;
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.footer__form input::placeholder {
+  color: #000;
+}
+
+.footer__form input:focus {
+  outline: unset;
+}
+
+.footer__form label {
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-align: center;
+  width: 10ch;
+}
+
+.footer__form button {
+  cursor: pointer;
+  border: unset;
+  height: 100%;
+  transition: 0.3s all ease;
+}
+
+.footer__form button:hover {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
+}
+
+.footer__social {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0.5rem;
+  justify-self: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__social {
+    justify-self: end;
+  }
+}
+
+.footer__social a,
+.footer__social a:visited,
+.footer__social a:active {
+  color: #fff;
+  margin-left: 0.2rem;
+}
+
+.footer__social a .fa-twitter,
+.footer__social a:visited .fa-twitter,
+.footer__social a:active .fa-twitter {
+  color: #000;
+}
+
+.footer hr {
+  border-color: #fff4;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin: 2.5rem 0;
+}

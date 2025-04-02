@@ -1,0 +1,61 @@
+.hero {
+  position: relative;
+  height: 29rem;
+  background-color: #000;
+}
+
+@media screen and (min-width: 720px) {
+  .hero {
+    height: 34rem;
+  }
+}
+
+.hero__background {
+  position: absolute;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.hero__container {
+  position: relative;
+  height: 100%;
+}
+
+.hero__copy {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__copy {
+    width: 50%;
+    padding: 7rem 0;
+    padding: 2rem 0;
+  }
+}
+
+.hero__copy h2 {
+  margin: 0;
+  font-size: 4rem;
+  line-height: 7.5rem;
+  margin-bottom: 3rem;
+  color: var(--color-primary);
+  letter-spacing: -0.3125rem;
+}
+
+@media screen and (min-width: 720px) {
+  .hero__copy h2 {
+    font-size: 7.5rem;
+    padding-right: 4rem;
+  }
+}
+
+.hero__copy p {
+  margin: 0;
+  color: var(--color-copy--alt);
+  font-size: 0.9375rem;
+  line-height: 1.875rem;
+}
