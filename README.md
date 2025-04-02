@@ -17,9 +17,9 @@
 
 ## 💻 About
 
-Studion is a simple yet meaningful project that marks my first step into web development. Built with foundational technologies like HTML, CSS, and JavaScript, it showcases my learning journey and experimentation with web design and interactivity.
+Studion is a simple yet meaningful project that marks my first step into web development. Built with foundational technologies like HTML, CSS, and JavaScript.
 
-The project features a dynamic carousel powered by the Slick Carousel library and is deployed using [Surge](https://surge.sh/). While it’s a humble beginning, it represents my passion for creating and learning.
+The project features a dynamic carousel powered by the Slick Carousel library and is deployed using GitHub Actions to [GitHub Pages](https://nrotondaro.github.io/studion/).
 
 ## ✨ Techs
 
@@ -36,7 +36,7 @@ This project is made using:
 - Responsive design for all devices.
 - Dynamic carousel powered by Slick Carousel.
 - Simple and clean UI for showcasing events.
-- Deployed and accessible online via Surge.
+- Deployed and accessible online via [GitHub Pages](https://nrotondaro.github.io/studion/).
 
 ## 🚀 How to run
 
